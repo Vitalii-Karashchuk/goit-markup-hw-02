@@ -14,6 +14,9 @@
   top: 24px;
 }
 */
+.header-link {
+  text-decoration: none;
+}
 .header-link-logo-start {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -37,10 +40,16 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  text-decoration: none;
   color: #212121;
 }
 .menu-link:hover,
-.menu-link:focus {
+:focus {
+  color: #2196f3;
+}
+.mail-link,
+.tel-link:hover,
+:focus {
   color: #2196f3;
 }
 .mail-link,
@@ -49,13 +58,8 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  text-decoration: none;
   color: #757575;
-}
-.mail-link,
-.tel-link:hover,
-.mail-link,
-.tel-link:focus {
-  color: #2196f3;
 }
 /*=============header-end===========*/
 /*============main-start============*/
@@ -81,6 +85,7 @@
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  cursor: pointer;
 }
 /*============section-hero-end=====*/
 /*==========section-features-company-start=====*/
@@ -102,10 +107,7 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.heading-feature-one,
-.heading-feature-two,
-.heading-feature-three,
-.heading-feature-four {
+.heading-feature {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -113,10 +115,7 @@
   text-transform: uppercase;
   color: #212121;
 }
-.description-feature-one,
-.description-feature-two,
-.description-feature-three,
-.description-feature-four {
+.description-feature {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -170,6 +169,9 @@
 .footer {
   background: #2f303a;
 }
+.footer-link {
+  text-decoration: none;
+}
 .footer-link-logo-start {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -185,25 +187,72 @@
   line-height: 1.19;
   color: #ffffff;
 }
+.list-address {
+  list-style: none;
+}
 .list-address-item-link {
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  text-decoration: none;
   color: #ffffff;
 }
 .list-address-item-mail {
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
 }
 .list-address-item-tel {
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
 }
 /*==========section-footer-end=====*/
+/*----------portfolio--------------*/
+/*========section-projeсts-start====*/
+.list-btn {
+  list-style: none;
+}
+.list-btn-item {
+  background: #f5f4fa;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  cursor: pointer;
+}
+.list-btn-item:hover,
+:focus {
+  background: #2196f3;
+  color: #ffffff;
+}
+.list-projeсts {
+  list-style: none;
+}
+.heading-item-project {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: #212121;
+}
+.description-item-project {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+/*========section-projeсts-end====*/
