@@ -1,19 +1,46 @@
-.body {
+body {
   font-family: "Roboto", sans-serif;
+}
+:root {
+  --accent-color: #2196f3;
+}
+:root {
+  --background-color: #ffffff;
+}
+:root {
+  --main-text-color: #212121;
+}
+:root {
+  --background-hero: #2f303a;
+}
+:root {
+  --background-our-team: #f5f4fa;
+}
+:root {
+  --background-footer-color: #2f303a;
+}
+:root {
+  --btn-item-color: #f5f4fa;
+}
+:root {
+  --text-btn-color: #ffffff;
+}
+:root {
+  --logo-address-footer-color: #ffffff;
+}
+:root {
+  --mail-tel-color: #757575;
+}
+:root {
+  --text-description-color: #757575;
+}
+:root {
+  --text-address-footer-color: rgba(255, 255, 255, 0.6);
 }
 /*============header-start================*/
 .header {
-  background: #ffffff;
+  background-color: var(--background-color);
 }
-/*
-.header-link {
-  position: absolute;
-  width: 145px;
-  height: 31px;
-  left: 215px;
-  top: 24px;
-}
-*/
 .header-link {
   text-decoration: none;
 }
@@ -23,14 +50,14 @@
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #2196f3;
+  color: var(--accent-color);
 }
 .header-link-logo-end {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  color: #212121;
+  color: var(--main-text-color);
 }
 .menu {
   list-style: none;
@@ -41,16 +68,19 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
-  color: #212121;
+  color: var(--main-text-color);
 }
 .menu-link:hover,
-:focus {
-  color: #2196f3;
+.menu-link:focus {
+  color: var(--accent-color);
 }
-.mail-link,
+.mail-link:hover,
+.mail-link:focus {
+  color: var(--accent-color);
+}
 .tel-link:hover,
-:focus {
-  color: #2196f3;
+.tel-link:focus {
+  color: var(--accent-color);
 }
 .mail-link,
 .tel-link {
@@ -59,13 +89,16 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
-  color: #757575;
+  color: var(--mail-tel-color);
+}
+.current {
+  color: var(--accent-color);
 }
 /*=============header-end===========*/
 /*============main-start============*/
 /*============section-hero-start=====*/
 .hero {
-  background: #2f303a;
+  background: var(--background-hero);
 }
 .hero-title {
   font-weight: 900;
@@ -75,22 +108,21 @@
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--background-color);
 }
 .modal-btn {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  color: #ffffff;
-  background: #2196f3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
+  color: var(--text-btn-color);
+  background: var(--accent-color);
+  border: none;
   cursor: pointer;
 }
 /*============section-hero-end=====*/
 /*==========section-features-company-start=====*/
 .features-company {
-  background: #ffffff;
+  background: var(--background-color);
 }
 .list-features {
   list-style: none;
@@ -113,7 +145,7 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #212121;
+  color: var(--main-text-color);
 }
 .description-feature {
   font-weight: 400;
@@ -129,7 +161,7 @@
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--main-text-color);
 }
 .list-work {
   list-style: none;
@@ -137,7 +169,7 @@
 }
 /*==========section-our-team-start=====*/
 .our-team {
-  background: #f5f4fa;
+  background: var(--background-our-team);
 }
 .heading-team {
   font-weight: 700;
@@ -145,7 +177,7 @@
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--main-text-color);
 }
 .list-team {
   list-style: none;
@@ -155,19 +187,19 @@
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--main-text-color);
 }
 .activity-employee {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--mail-tel-color);
 }
 /*==========section-our-team-end=====*/
 /*==========section-footer-start=====*/
 .footer {
-  background: #2f303a;
+  background: var(--background-footer-color);
 }
 .footer-link {
   text-decoration: none;
@@ -178,14 +210,14 @@
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #2196f3;
+  color: var(--accent-color);
 }
 .footer-link-logo-end {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  color: #ffffff;
+  color: var(--logo-address-footer-color);
 }
 .list-address {
   list-style: none;
@@ -197,7 +229,7 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration: none;
-  color: #ffffff;
+  color: var(--logo-address-footer-color);
 }
 .list-address-item-mail {
   font-style: normal;
@@ -206,7 +238,7 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--text-address-footer-color);
 }
 .list-address-item-tel {
   font-style: normal;
@@ -215,7 +247,7 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--text-address-footer-color);
 }
 /*==========section-footer-end=====*/
 /*----------portfolio--------------*/
@@ -224,19 +256,20 @@
   list-style: none;
 }
 .list-btn-item {
-  background: #f5f4fa;
+  background: var(--btn-item-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--main-text-color);
+  border: none;
   cursor: pointer;
 }
 .list-btn-item:hover,
-:focus {
-  background: #2196f3;
-  color: #ffffff;
+.list-btn-item:focus {
+  background: var(--accent-color);
+  color: var(--text-btn-color);
 }
 .list-projeсts {
   list-style: none;
@@ -246,13 +279,16 @@
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: #212121;
+  color: var(--main-text-color);
 }
 .description-item-project {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--text-description-color);
+}
+.link-item-project {
+  text-decoration: none;
 }
 /*========section-projeсts-end====*/
